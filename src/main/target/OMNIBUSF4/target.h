@@ -41,11 +41,13 @@
 #define BEEPER                  PB4
 #define BEEPER_INVERTED
 
-#if defined(OMNIBUSF4V3)
-  #define INVERTER_PIN_UART6      PC8
-#else
-  #define INVERTER_PIN_UART1      PC0 // PC0 has never been used as inverter control on genuine OMNIBUS F4 variants, but leave it as is since some clones actually implement it.
-#endif
+#define INVERTER_PIN_UART6      PC8
+#define INVERTER_PIN_UART3      PC9
+//#if defined(OMNIBUSF4V3)
+  //#define INVERTER_PIN_UART6      PC8
+//#else
+  //#define INVERTER_PIN_UART1      PC0 // PC0 has never been used as inverter control on genuine OMNIBUS F4 variants, but leave it as is since some clones actually implement it.
+//#endif
 
 #define USE_I2C
 #define USE_I2C_DEVICE_2
